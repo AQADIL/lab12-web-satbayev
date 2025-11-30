@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarlenEDU - Білім беру платформасы</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Frontend әзірлеу - MarlenEDU</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <!-- Header Navigation -->
     <header class="header">
         <nav class="nav">
             <div class="nav-container">
@@ -21,7 +20,7 @@
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle">Бағдарламалар ▼</a>
                         <ul class="dropdown-menu">
-                            <li><a href="frontend.html" class="dropdown-link">Frontend әзірлеу</a></li>
+                            <li><a href="frontend.html" class="dropdown-link active">Frontend әзірлеу</a></li>
                             <li><a href="backend.html" class="dropdown-link">Backend әзірлеу</a></li>
                             <li><a href="mobile.html" class="dropdown-link">Мобильді әзірлеу</a></li>
                             <li><a href="design.html" class="dropdown-link">UI/UX дизайн</a></li>
@@ -39,14 +38,13 @@
         </nav>
     </header>
 
-    <!-- Side Drawer Menu -->
     <div class="drawer-backdrop" id="drawerBackdrop"></div>
     <aside class="drawer" id="drawer">
         <button class="drawer-close" id="drawerClose">×</button>
         <div class="drawer-content">
             <h3>Меню</h3>
             <ul class="drawer-menu">
-                <li><a href="courses.html">Курстар</a></li>
+                <li><a href="courses.html">Курсы</a></li>
                 <li><a href="frontend.html">Frontend әзірлеу</a></li>
                 <li><a href="backend.html">Backend әзірлеу</a></li>
                 <li><a href="mobile.html">Мобильді әзірлеу</a></li>
@@ -57,130 +55,114 @@
         </div>
     </aside>
 
-    <!-- Main Content -->
     <main class="main">
-        <!-- Progress Bars Section -->
-        <section class="progress-section">
-            <h2>Оқу прогресі</h2>
-            <div class="progress-container">
-                <div class="progress-item">
-                    <div class="progress-label">HTML/CSS</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" data-progress="85"></div>
-                    </div>
-                    <span class="progress-percent">85%</span>
+        <section class="page-header">
+            <h1>Frontend әзірлеу</h1>
+            <p>Қазіргі веб-интерфейстерді жасауды үйреніңіз</p>
+        </section>
+
+        <section class="program-overview">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>Бағдарлама туралы</h2>
+                    <p>MarlenEDU-дағы Frontend әзірлеу бағдарламасы сізге қазіргі веб-интерфейстерді жасауды үйретеді. Сіз HTML, CSS, JavaScript және қазіргі фреймворктерді толық меңгересіз.</p>
+                    
+                    <h3>Не үйренесіз:</h3>
+                    <ul class="skills-list">
+                        <li>✓ HTML5 және CSS3 негіздері</li>
+                        <li>✓ JavaScript және ES6+ мүмкіндіктері</li>
+                        <li>✓ React, Vue.js, Angular фреймворктері</li>
+                        <li>✓ Адаптивті дизайн және мобильді алдын-ала қарау</li>
+                        <li>✓ Webpack және басқа құралдар</li>
+                        <li>✓ Тестілеу және код сапасы</li>
+                    </ul>
                 </div>
-                <div class="progress-item">
-                    <div class="progress-label">JavaScript</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" data-progress="72"></div>
-                    </div>
-                    <span class="progress-percent">72%</span>
-                </div>
-                <div class="progress-item">
-                    <div class="progress-label">React</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" data-progress="60"></div>
-                    </div>
-                    <span class="progress-percent">60%</span>
-                </div>
-                <div class="progress-item">
-                    <div class="progress-label">Node.js</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" data-progress="45"></div>
-                    </div>
-                    <span class="progress-percent">45%</span>
+                <div class="overview-image">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=350&fit=crop&crop=center" alt="Frontend разработка">
                 </div>
             </div>
         </section>
 
-        <!-- Interactive Cards Grid -->
-        <section class="cards-section">
-            <h2>Біздің курстарымыз</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&h=200&fit=crop&crop=center" alt="HTML/CSS курс">
-                    </div>
-                    <div class="card-content">
+        <section class="program-courses">
+            <h2>Бағдарламадағы курстар</h2>
+            <div class="courses-list">
+                <div class="course-item">
+                    <div class="course-number">1</div>
+                    <div class="course-info">
                         <h3>HTML/CSS негіздері</h3>
-                        <p>Веб-разметка және стильдеу негіздерін үйреніңіз</p>
-                        <div class="card-meta">
+                        <p>Веб-разметка және стильдеу негіздері</p>
+                        <div class="course-meta">
                             <span class="duration">3 ай</span>
                             <span class="level">Бастауыш</span>
+                            <span class="price">45,000₸</span>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1526379095098-d400fd567e2e?w=300&h=200&fit=crop&crop=center" alt="JavaScript курс">
-                    </div>
-                    <div class="card-content">
+
+                <div class="course-item">
+                    <div class="course-number">2</div>
+                    <div class="course-info">
                         <h3>JavaScript кеңейтілген</h3>
                         <p>JavaScript және ES6+ тереңдете оқу</p>
-                        <div class="card-meta">
+                        <div class="course-meta">
                             <span class="duration">4 ай</span>
                             <span class="level">Орташа</span>
+                            <span class="price">65,000₸</span>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=300&h=200&fit=crop&crop=center" alt="React курс">
-                    </div>
-                    <div class="card-content">
+
+                <div class="course-item">
+                    <div class="course-number">3</div>
+                    <div class="course-info">
                         <h3>React және Redux</h3>
                         <p>Қазіргі SPA қолданбаларын жасау</p>
-                        <div class="card-meta">
+                        <div class="course-meta">
                             <span class="duration">5 ай</span>
                             <span class="level">Жоғары</span>
+                            <span class="price">85,000₸</span>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=300&h=200&fit=crop&crop=center" alt="Node.js курс">
-                    </div>
-                    <div class="card-content">
-                        <h3>Node.js Backend</h3>
-                        <p>Node.js-да серверлік бөлікті әзірлеу</p>
-                        <div class="card-meta">
-                            <span class="duration">4 ай</span>
-                            <span class="level">Орташа</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?w=300&h=200&fit=crop&crop=center" alt="Vue.js курс">
-                    </div>
-                    <div class="card-content">
+
+                <div class="course-item">
+                    <div class="course-number">4</div>
+                    <div class="course-info">
                         <h3>Vue.js 3</h3>
                         <p>Vue.js-да қазіргі әзірлеу</p>
-                        <div class="card-meta">
+                        <div class="course-meta">
                             <span class="duration">3 ай</span>
                             <span class="level">Орташа</span>
+                            <span class="price">55,000₸</span>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=300&h=200&fit=crop&crop=center" alt="Python курс">
-                    </div>
-                    <div class="card-content">
-                        <h3>Python бастаушыларға</h3>
-                        <p>Pythonда бағдарламалау негіздері</p>
-                        <div class="card-meta">
-                            <span class="duration">3 ай</span>
-                            <span class="level">Бастауыш</span>
-                        </div>
-                    </div>
+            </div>
+        </section>
+
+        <section class="career-section">
+            <h2>Мансап мүмкіндіктері</h2>
+            <div class="career-grid">
+                <div class="career-item">
+                    <h3>Junior Frontend Developer</h3>
+                    <p>₽70,000 - 120,000</p>
+                </div>
+                <div class="career-item">
+                    <h3>Frontend Developer</h3>
+                    <p>₽120,000 - 200,000</p>
+                </div>
+                <div class="career-item">
+                    <h3>Senior Frontend Developer</h3>
+                    <p>₽200,000 - 350,000</p>
+                </div>
+                <div class="career-item">
+                    <h3>Frontend Team Lead</h3>
+                    <p>₽300,000 - 500,000</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Share Widget -->
     <div class="share-widget">
         <button class="share-button" id="shareButton">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -213,6 +195,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
